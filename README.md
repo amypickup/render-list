@@ -2,6 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+With this project, I implemented a few different versions of long list displays, including:
+
+- LargeList: a regular large list of components, viewing in profiler shows all components rendered in the DOM
+- Paginate: uses `react-paginate` library
+- InfiniteScroller: this one doesn't work yet
+- Window: uses `react-window`, basic implementation
+- WindowMemo: uses `react-window` on an application where you may want to memoize the list
+- WindowMemoExample: same as above, but example pulled directly from `react-window` docs: [https://codesandbox.io/s/github/bvaughn/react-window/tree/master/website/sandboxes/memoized-list-items?file=/index.js](Memoized List Items) / [https://react-window.vercel.app/#/examples/list/memoized-list-items] (React-Window memoized list items)
+
+This project was inspired by the logrocket post: [https://blog.logrocket.com/render-large-lists-react-5-methods-examples/](Render Large Lists React 5 Methods Examples)
+
 ## Available Scripts
 
 In the project directory, you can run:
