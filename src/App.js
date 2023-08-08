@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Window from "./components/Window";
+import WindowMemo from "./components/WindowMemo";
+import WindowMemoExample from "./components/WindowMemoExample";
+import Paginate from "./components/Paginate";
+import LargeList from "./components/LargeList";
+import logo from "./logo.svg";
+import "./App.css";
+
+const listTypeButtons = [
+  { text: "LargeList" },
+  { text: "Window" },
+  { text: "WindowMemo" },
+  { text: "WindowMemoExample" },
+  { text: "Paginate" },
+];
 
 function App() {
+  const [view, setView] = useState("WindowMemoExample");
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="btn-group">
+          {listTypeButtons.map((listType, index) => (
+            <button
+              key={index}
+              onClick={() => setView(listType.text)}
+              className="button"
+            >
+              {listType.text}
+            </button>
+          ))}
+        </div>
       </header>
+      {view === "LargeList" ? <LargeList /> : null}
+      {view === "Paginate" ? <Paginate /> : null}
+      {view === "Window" ? <Window /> : null}
+      {view === "WindowMemo" ? <WindowMemo /> : null}
+      {view === "WindowMemoExample" ? <WindowMemoExample /> : null}
     </div>
   );
 }
