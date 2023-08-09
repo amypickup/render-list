@@ -9,7 +9,7 @@ With this project, I implemented a few different versions of long list displays,
 - InfiniteScroller: this one doesn't work yet
 - Window: uses `react-window`, basic implementation
 - WindowMemo: uses `react-window` on an application where you may want to memoize the list
-- WindowMemoExample: same as above, but example pulled directly from `react-window` docs: [Memoized List Items Sandbox](https://codesandbox.io/s/github/bvaughn/react-window/tree/master/website/sandboxes/memoized-list-items?file=/index.js) / [React-Window memoized list items vercel app examples] (https://react-window.vercel.app/#/examples/list/memoized-list-items)
+- WindowMemoExample: same as above, but example pulled directly from `react-window` docs: [Memoized List Items Sandbox](https://codesandbox.io/s/github/bvaughn/react-window/tree/master/website/sandboxes/memoized-list-items?file=/index.js) / [React-Window memoized list items vercel app examples](https://react-window.vercel.app/#/examples/list/memoized-list-items)
 
 This project was inspired by the logrocket post: [Render Large Lists React 5 Methods Examples](https://blog.logrocket.com/render-large-lists-react-5-methods-examples/)
 
