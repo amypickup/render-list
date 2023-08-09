@@ -4,7 +4,7 @@ import WindowMemo from "./components/WindowMemo";
 import WindowMemoExample from "./components/WindowMemoExample";
 import Paginate from "./components/Paginate";
 import LargeList from "./components/LargeList";
-import logo from "./logo.svg";
+import ViewPort from "./components/ViewPort";
 import "./App.css";
 
 const listTypeButtons = [
@@ -13,6 +13,7 @@ const listTypeButtons = [
   { text: "WindowMemo" },
   { text: "WindowMemoExample" },
   { text: "Paginate" },
+  { text: "ViewPort" },
 ];
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         </div>
       </header>
       {view === "LargeList" ? <LargeList /> : null}
+      {view === "ViewPort" ? <ViewPort /> : null}
       {view === "Paginate" ? <Paginate /> : null}
       {view === "Window" ? <Window /> : null}
       {view === "WindowMemo" ? <WindowMemo /> : null}
